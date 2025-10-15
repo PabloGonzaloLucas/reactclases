@@ -12,7 +12,8 @@ class PadreNumeros extends Component{
     }
 
     generarNum = () => {
-        this.state.numeros.push(parseInt(Math.random() * 100)+1)
+        this.state.numeros.push(this.state.numeros[this.state.numeros.length-1] + this.state.numeros[this.state.numeros.length-2])
+        // this.state.numeros.push(parseInt(Math.random() * 100)+1)
         this.setState({numeros:this.state.numeros})
     }
     
